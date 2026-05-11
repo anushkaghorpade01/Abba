@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>A Life in Frames — Memory Collage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  html, body {
+    margin: 0; padding: 0;
+    background: #07050a;
+    color: #f3e6cf;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    height: 100%;
+    overflow: hidden;
+  }
+  #root { width: 100vw; height: 100vh; }
+  /* hide image alt text flash */
+  img { color: transparent; }
+</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<meta name="ext-resource-dependency" content="memories/m01.jpeg" data-resource-id="m01" />
+<meta name="ext-resource-dependency" content="memories/m02.jpeg" data-resource-id="m02" />
+<meta name="ext-resource-dependency" content="memories/m03.jpeg" data-resource-id="m03" />
+<meta name="ext-resource-dependency" content="memories/m04.jpeg" data-resource-id="m04" />
+<meta name="ext-resource-dependency" content="memories/m05.jpeg" data-resource-id="m05" />
+<meta name="ext-resource-dependency" content="memories/m06.jpeg" data-resource-id="m06" />
+<meta name="ext-resource-dependency" content="memories/m07.jpeg" data-resource-id="m07" />
+<meta name="ext-resource-dependency" content="memories/m08.jpeg" data-resource-id="m08" />
+<meta name="ext-resource-dependency" content="memories/m09.jpeg" data-resource-id="m09" />
+<meta name="ext-resource-dependency" content="memories/m10.jpeg" data-resource-id="m10" />
+<meta name="ext-resource-dependency" content="memories/m11.jpeg" data-resource-id="m11" />
+<meta name="ext-resource-dependency" content="memories/m12.jpeg" data-resource-id="m12" />
+<meta name="ext-resource-dependency" content="memories/m13.jpeg" data-resource-id="m13" />
+<meta name="ext-resource-dependency" content="memories/m14.jpeg" data-resource-id="m14" />
+<meta name="ext-resource-dependency" content="memories/m15.jpeg" data-resource-id="m15" />
+<meta name="ext-resource-dependency" content="memories/m16.jpeg" data-resource-id="m16" />
+<meta name="ext-resource-dependency" content="memories/m17.jpeg" data-resource-id="m17" />
+<meta name="ext-resource-dependency" content="memories/m18.jpeg" data-resource-id="m18" />
+<meta name="ext-resource-dependency" content="memories/m19.jpeg" data-resource-id="m19" />
+<meta name="ext-resource-dependency" content="memories/m20.jpeg" data-resource-id="m20" />
+<meta name="ext-resource-dependency" content="memories/m21.jpeg" data-resource-id="m21" />
+<meta name="ext-resource-dependency" content="memories/m22.jpeg" data-resource-id="m22" />
+<meta name="ext-resource-dependency" content="memories/m23.jpeg" data-resource-id="m23" />
+<meta name="ext-resource-dependency" content="memories/m24.jpeg" data-resource-id="m24" />
+<meta name="ext-resource-dependency" content="memories/m25.jpeg" data-resource-id="m25" />
+<meta name="ext-resource-dependency" content="memories/m26.jpeg" data-resource-id="m26" />
+<meta name="ext-resource-dependency" content="memories/m27.jpeg" data-resource-id="m27" />
+<meta name="ext-resource-dependency" content="memories/m28.jpeg" data-resource-id="m28" />
+<meta name="ext-resource-dependency" content="memories/m29.jpeg" data-resource-id="m29" />
+<meta name="ext-resource-dependency" content="memories/m30.jpeg" data-resource-id="m30" />
+<meta name="ext-resource-dependency" content="memories/m31.jpeg" data-resource-id="m31" />
+<meta name="ext-resource-dependency" content="memories/m32.jpeg" data-resource-id="m32" />
+<meta name="ext-resource-dependency" content="memories/m33.jpeg" data-resource-id="m33" />
+<meta name="ext-resource-dependency" content="memories/m34.jpeg" data-resource-id="m34" />
+<meta name="ext-resource-dependency" content="memories/m35.jpeg" data-resource-id="m35" />
+<meta name="ext-resource-dependency" content="memories/m36.jpeg" data-resource-id="m36" />
+<meta name="ext-resource-dependency" content="memories/m37.jpeg" data-resource-id="m37" />
+<meta name="ext-resource-dependency" content="memories/m38.jpeg" data-resource-id="m38" />
+<meta name="ext-resource-dependency" content="memories/m39.jpeg" data-resource-id="m39" />
+<meta name="ext-resource-dependency" content="memories/m40.jpeg" data-resource-id="m40" />
+<meta name="ext-resource-dependency" content="memories/m41.jpeg" data-resource-id="m41" />
+<meta name="ext-resource-dependency" content="memories/m42.jpeg" data-resource-id="m42" />
+<meta name="ext-resource-dependency" content="memories/m43.jpeg" data-resource-id="m43" />
+<meta name="ext-resource-dependency" content="memories/m44.jpeg" data-resource-id="m44" />
+<meta name="ext-resource-dependency" content="memories/m45.jpeg" data-resource-id="m45" />
+<meta name="ext-resource-dependency" content="memories/m46.jpeg" data-resource-id="m46" />
+<meta name="ext-resource-dependency" content="memories/m47.jpeg" data-resource-id="m47" />
+<meta name="ext-resource-dependency" content="memories/m48.jpeg" data-resource-id="m48" />
+<meta name="ext-resource-dependency" content="memories/m49.jpeg" data-resource-id="m49" />
+<meta name="ext-resource-dependency" content="memories/m50.jpeg" data-resource-id="m50" />
+<meta name="ext-resource-dependency" content="memories/m51.jpeg" data-resource-id="m51" />
+<meta name="ext-resource-dependency" content="memories/m52.jpeg" data-resource-id="m52" />
+<meta name="ext-resource-dependency" content="memories/m53.jpeg" data-resource-id="m53" />
+<meta name="ext-resource-dependency" content="memories/m54.jpeg" data-resource-id="m54" />
+<meta name="ext-resource-dependency" content="memories/m55.jpeg" data-resource-id="m55" />
+<meta name="ext-resource-dependency" content="memories/m56.jpeg" data-resource-id="m56" />
+<meta name="ext-resource-dependency" content="memories/m57.jpeg" data-resource-id="m57" />
+<meta name="ext-resource-dependency" content="memories/m58.jpeg" data-resource-id="m58" />
+<meta name="ext-resource-dependency" content="memories/m59.jpeg" data-resource-id="m59" />
+<meta name="ext-resource-dependency" content="memories/m60.jpeg" data-resource-id="m60" />
+<meta name="ext-resource-dependency" content="memories/m61.jpeg" data-resource-id="m61" />
+<meta name="ext-resource-dependency" content="memories/m62.jpeg" data-resource-id="m62" />
+<meta name="ext-resource-dependency" content="memories/m63.jpeg" data-resource-id="m63" />
+<meta name="ext-resource-dependency" content="memories/m64.jpeg" data-resource-id="m64" />
+<meta name="ext-resource-dependency" content="memories/m65.jpeg" data-resource-id="m65" />
+<meta name="ext-resource-dependency" content="memories/m66.jpeg" data-resource-id="m66" />
+<meta name="ext-resource-dependency" content="memories/m67.jpeg" data-resource-id="m67" />
+<meta name="ext-resource-dependency" content="memories/m68.jpeg" data-resource-id="m68" />
+<meta name="ext-resource-dependency" content="memories/m69.jpeg" data-resource-id="m69" />
+<meta name="ext-resource-dependency" content="memories/m70.jpeg" data-resource-id="m70" />
+<meta name="ext-resource-dependency" content="memories/m71.jpeg" data-resource-id="m71" />
+<meta name="ext-resource-dependency" content="memories/m72.jpeg" data-resource-id="m72" />
+<meta name="ext-resource-dependency" content="memories/m73.jpeg" data-resource-id="m73" />
+</head>
+<body>
+<template id="__bundler_thumbnail" data-bg-color="#07050a">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(600 400)">
+      <g transform="rotate(-9)"><rect x="-240" y="-160" width="480" height="320" rx="6" fill="#f3e6cf" opacity="0.92"/><rect x="-220" y="-140" width="440" height="240" fill="#1a1410"/></g>
+      <g transform="rotate(6) translate(80 -20)"><rect x="-220" y="-150" width="440" height="300" rx="6" fill="#e8d6b3" opacity="0.95"/><rect x="-200" y="-130" width="400" height="220" fill="#2a1f17"/></g>
+      <g transform="rotate(-3) translate(-110 40)"><rect x="-200" y="-130" width="400" height="260" rx="6" fill="#fff5dd"/><rect x="-180" y="-110" width="360" height="190" fill="#3a2418"/></g>
+    </g>
+    <text x="600" y="730" font-family="Georgia, serif" font-style="italic" font-size="40" fill="#f3e6cf" text-anchor="middle" opacity="0.85">A Life in Frames</text>
+  </svg>
+</template>
+<div id="root"></div>
+<script type="text/babel" src="animations.jsx"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="collage.jsx"></script>
+</body>
+</html>
