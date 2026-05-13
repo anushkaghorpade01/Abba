@@ -1,0 +1,531 @@
+{
+  "generatedAt": "2026-05-13T07:03:15.623Z",
+  "base": "public/EDITED",
+  "entries": [
+    {
+      "file": "0.png",
+      "kind": "image",
+      "aspect": 1.5,
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "1.jpg",
+      "kind": "image",
+      "aspect": 1.105849582172702,
+      "width": 2382,
+      "height": 2154
+    },
+    {
+      "file": "2.jpg",
+      "kind": "image",
+      "aspect": 1.3333333333333333,
+      "width": 4032,
+      "height": 3024
+    },
+    {
+      "file": "3.jpg",
+      "kind": "image",
+      "aspect": 1.3333333333333333,
+      "width": 4032,
+      "height": 3024
+    },
+    {
+      "file": "4.png",
+      "kind": "image",
+      "aspect": 0.75,
+      "width": 1086,
+      "height": 1448
+    },
+    {
+      "file": "5.png",
+      "kind": "image",
+      "aspect": 1.921195652173913,
+      "width": 1414,
+      "height": 736
+    },
+    {
+      "file": "6.jpeg",
+      "kind": "image",
+      "aspect": 1.5574614065180103,
+      "width": 908,
+      "height": 583
+    },
+    {
+      "file": "7.jpg",
+      "kind": "image",
+      "aspect": 1.5781330582774626,
+      "width": 3060,
+      "height": 1939
+    },
+    {
+      "file": "8.png",
+      "kind": "image",
+      "aspect": 0.6464646464646465,
+      "width": 832,
+      "height": 1287
+    },
+    {
+      "file": "9.png",
+      "kind": "image",
+      "aspect": 2.1617819460726846,
+      "width": 1844,
+      "height": 853
+    },
+    {
+      "file": "10.png",
+      "kind": "image",
+      "aspect": 1.044091073364655,
+      "width": 2889,
+      "height": 2767
+    },
+    {
+      "file": "11.png",
+      "kind": "image",
+      "aspect": 1.56686626746507,
+      "width": 1570,
+      "height": 1002
+    },
+    {
+      "file": "12.jpg",
+      "kind": "image",
+      "aspect": 1.3333333333333333,
+      "width": 4000,
+      "height": 3000
+    },
+    {
+      "file": "013.jpeg",
+      "kind": "image",
+      "aspect": 1.5745614035087718,
+      "width": 1436,
+      "height": 912
+    },
+    {
+      "file": "14.jpg",
+      "kind": "image",
+      "aspect": 1.484708063021316,
+      "width": 3204,
+      "height": 2158
+    },
+    {
+      "file": "15.jpg",
+      "kind": "image",
+      "aspect": 1.2714859437751005,
+      "width": 1583,
+      "height": 1245
+    },
+    {
+      "file": "16.jpg",
+      "kind": "image",
+      "aspect": 1.2895927601809956,
+      "width": 1140,
+      "height": 884
+    },
+    {
+      "file": "17.JPG",
+      "kind": "image",
+      "aspect": 1.7597551644988523,
+      "width": 2300,
+      "height": 1307
+    },
+    {
+      "file": "18.png",
+      "kind": "image",
+      "aspect": 2.041002277904328,
+      "width": 1792,
+      "height": 878
+    },
+    {
+      "file": "19.png",
+      "kind": "image",
+      "aspect": 0.751209398756047,
+      "width": 1087,
+      "height": 1447
+    },
+    {
+      "file": "20.png",
+      "kind": "image",
+      "aspect": 1.849240780911063,
+      "width": 1705,
+      "height": 922
+    },
+    {
+      "file": "21.jpg",
+      "kind": "image",
+      "aspect": 1.6967263743051266,
+      "width": 2747,
+      "height": 1619
+    },
+    {
+      "file": "22.jpg",
+      "kind": "image",
+      "aspect": 1.7428206764518188,
+      "width": 2731,
+      "height": 1567
+    },
+    {
+      "file": "23.jpg",
+      "kind": "image",
+      "aspect": 1.3333333333333333,
+      "width": 4000,
+      "height": 3000
+    },
+    {
+      "file": "24.jpg",
+      "kind": "image",
+      "aspect": 1.559930515344528,
+      "width": 2694,
+      "height": 1727
+    },
+    {
+      "file": "25.jpg",
+      "kind": "image",
+      "aspect": 1.0297265160523186,
+      "width": 2598,
+      "height": 2523
+    },
+    {
+      "file": "26.png",
+      "kind": "image",
+      "aspect": 2.0688073394495414,
+      "width": 1804,
+      "height": 872
+    },
+    {
+      "file": "27.jpg",
+      "kind": "image",
+      "aspect": 1.3333333333333333,
+      "width": 4000,
+      "height": 3000
+    },
+    {
+      "file": "28.jpeg",
+      "kind": "image",
+      "aspect": 1.0312138728323699,
+      "width": 892,
+      "height": 865
+    },
+    {
+      "file": "29.png",
+      "kind": "image",
+      "aspect": 1.646878198567042,
+      "width": 1609,
+      "height": 977
+    },
+    {
+      "file": "30.jpg",
+      "kind": "image",
+      "aspect": 1.7484593837535014,
+      "width": 3121,
+      "height": 1785
+    },
+    {
+      "file": "31.jpg",
+      "kind": "image",
+      "aspect": 1.3333333333333333,
+      "width": 4080,
+      "height": 3060
+    },
+    {
+      "file": "32.jpg",
+      "kind": "image",
+      "aspect": 1.655844155844156,
+      "width": 3060,
+      "height": 1848
+    },
+    {
+      "file": "33.jpg",
+      "kind": "image",
+      "aspect": 2.026555386949924,
+      "width": 2671,
+      "height": 1318
+    },
+    {
+      "file": "34.jpg",
+      "kind": "image",
+      "aspect": 1.7194989106753813,
+      "width": 3157,
+      "height": 1836
+    },
+    {
+      "file": "35.jpg",
+      "kind": "image",
+      "aspect": 1.8682432432432432,
+      "width": 2212,
+      "height": 1184
+    },
+    {
+      "file": "36.jpg",
+      "kind": "image",
+      "aspect": 1.250857142857143,
+      "width": 2189,
+      "height": 1750
+    },
+    {
+      "file": "37.png",
+      "kind": "image",
+      "aspect": 1.0416666666666667,
+      "width": 1050,
+      "height": 1008
+    },
+    {
+      "file": "38.jpg",
+      "kind": "image",
+      "aspect": 1.8531746031746033,
+      "width": 3269,
+      "height": 1764
+    },
+    {
+      "file": "39.jpg",
+      "kind": "image",
+      "aspect": 1.5294117647058822,
+      "width": 2808,
+      "height": 1836
+    },
+    {
+      "file": "40.jpg",
+      "kind": "image",
+      "aspect": 1.3333333333333333,
+      "width": 4080,
+      "height": 3060
+    },
+    {
+      "file": "41.jpg",
+      "kind": "image",
+      "aspect": 1.197651663405088,
+      "width": 3060,
+      "height": 2555
+    },
+    {
+      "file": "42.jpg",
+      "kind": "image",
+      "aspect": 1.0109018830525272,
+      "width": 3060,
+      "height": 3027
+    },
+    {
+      "file": "43.jpg",
+      "kind": "image",
+      "aspect": 0.7264552768575485,
+      "width": 1535,
+      "height": 2113
+    },
+    {
+      "file": "44.jpg",
+      "kind": "image",
+      "aspect": 1.096875,
+      "width": 2457,
+      "height": 2240
+    },
+    {
+      "file": "45.jpg",
+      "kind": "image",
+      "aspect": 1.5005861664712778,
+      "width": 1280,
+      "height": 853
+    },
+    {
+      "file": "46.jpg",
+      "kind": "image",
+      "aspect": 1.3333333333333333,
+      "width": 4080,
+      "height": 3060
+    },
+    {
+      "file": "47.png",
+      "kind": "image",
+      "aspect": 1.2358156028368794,
+      "width": 1394,
+      "height": 1128
+    },
+    {
+      "file": "49.png",
+      "kind": "image",
+      "aspect": 2.25,
+      "width": 1881,
+      "height": 836
+    },
+    {
+      "file": "50.jpg",
+      "kind": "image",
+      "aspect": 2.2933333333333334,
+      "width": 1548,
+      "height": 675
+    },
+    {
+      "file": "51.jpg",
+      "kind": "image",
+      "aspect": 1.9978843441466854,
+      "width": 2833,
+      "height": 1418
+    },
+    {
+      "file": "52.jpg",
+      "kind": "image",
+      "aspect": 1.8571428571428572,
+      "width": 2782,
+      "height": 1498
+    },
+    {
+      "file": "53.jpeg",
+      "kind": "image",
+      "aspect": 1.2644444444444445,
+      "width": 569,
+      "height": 450
+    },
+    {
+      "file": "54.png",
+      "kind": "image",
+      "aspect": 2.0398633257403187,
+      "width": 1791,
+      "height": 878
+    },
+    {
+      "file": "55.jpg",
+      "kind": "image",
+      "aspect": 0.6326671261199173,
+      "width": 1836,
+      "height": 2902
+    },
+    {
+      "file": "56.png",
+      "kind": "image",
+      "aspect": 1.9031903190319033,
+      "width": 1730,
+      "height": 909
+    },
+    {
+      "file": "57.jpg",
+      "kind": "image",
+      "aspect": 1.1557213930348258,
+      "width": 2323,
+      "height": 2010
+    },
+    {
+      "file": "58.jpg",
+      "kind": "image",
+      "aspect": 2.37268002969562,
+      "width": 3196,
+      "height": 1347
+    },
+    {
+      "file": "59.png",
+      "kind": "image",
+      "aspect": 2.147196261682243,
+      "width": 1838,
+      "height": 856
+    },
+    {
+      "file": "60.png",
+      "kind": "image",
+      "aspect": 1.3333333333333333,
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "file": "61.jpeg",
+      "kind": "image",
+      "aspect": 2.1947873799725652,
+      "width": 1600,
+      "height": 729
+    },
+    {
+      "file": "62.jpg",
+      "kind": "image",
+      "aspect": 1.9318181818181819,
+      "width": 3230,
+      "height": 1672
+    },
+    {
+      "file": "63.jpg",
+      "kind": "image",
+      "aspect": 1.3476702508960574,
+      "width": 2632,
+      "height": 1953
+    },
+    {
+      "file": "64.jpg",
+      "kind": "image",
+      "aspect": 1.3333333333333333,
+      "width": 4080,
+      "height": 3060
+    },
+    {
+      "file": "65.jpeg",
+      "kind": "image",
+      "aspect": 0.9142857142857143,
+      "width": 960,
+      "height": 1050
+    },
+    {
+      "file": "66.jpg",
+      "kind": "image",
+      "aspect": 1.26715799170889,
+      "width": 2751,
+      "height": 2171
+    },
+    {
+      "file": "67.jpg",
+      "kind": "image",
+      "aspect": 0.6554132712456344,
+      "width": 1126,
+      "height": 1718
+    },
+    {
+      "file": "68.jpg",
+      "kind": "image",
+      "aspect": 1.0441176470588236,
+      "width": 1917,
+      "height": 1836
+    },
+    {
+      "file": "69.jpg",
+      "kind": "image",
+      "aspect": 1.6552287581699345,
+      "width": 3039,
+      "height": 1836
+    },
+    {
+      "file": "70.jpg",
+      "kind": "image",
+      "aspect": 1.3333333333333333,
+      "width": 4080,
+      "height": 3060
+    },
+    {
+      "file": "71.png",
+      "kind": "image",
+      "aspect": 0.8602150537634409,
+      "width": 960,
+      "height": 1116
+    },
+    {
+      "file": "72.png",
+      "kind": "image",
+      "aspect": 1.7768331562167907,
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "73.jpeg",
+      "kind": "image",
+      "aspect": 1.3333333333333333,
+      "width": 1600,
+      "height": 1200
+    },
+    {
+      "file": "Add at start.mp4",
+      "kind": "video",
+      "aspect": 1.7777777777777777,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "file": "Dancing end Video.mp4",
+      "kind": "video",
+      "aspect": 1.7777777777777777,
+      "width": 1920,
+      "height": 1080
+    }
+  ]
+}

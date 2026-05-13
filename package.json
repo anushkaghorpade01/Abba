@@ -4,10 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "gen:manifest": "node scripts/generate-edit-manifest.mjs",
+    "predev": "node scripts/generate-edit-manifest.mjs",
     "dev": "http-server . -a 0.0.0.0 -p 5173 -c-1",
     "start": "npm run dev"
   },
   "devDependencies": {
-    "http-server": "latest"
+    "http-server": "latest",
+    "image-size": "^2.0.2"
   }
 }

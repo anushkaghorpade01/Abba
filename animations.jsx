@@ -7,6 +7,8 @@
 //     <MyScene />
 //   </Stage>
 //
+// Use fit="cover" on Stage for uniform full-bleed scaling (clips edges; no letterboxing).
+//
 // Inside <Stage>, any child can call useTime() to read the current
 // playhead (seconds). Or wrap content in <Sprite start={1} end={4}>...</Sprite>
 // to only render during that window -- children receive a `localTime` and
@@ -325,6 +327,8 @@ function Stage({
   height = 720,
   duration = 10,
   background = '#f6f4ef',
+  /** `contain`: full frame visible; may letterbox. `cover`: uniform scale fills viewport (clips edges); no pillarboxing. */
+  fit = 'contain',
   fps = 60,
   loop = true,
   autoplay = true,
@@ -351,16 +355,17 @@ function Stage({
     try { localStorage.setItem(persistKey + ':t', String(time)); } catch {}
   }, [time, persistKey]);
 
-  // Auto-scale to fit viewport
-  React.useEffect(() => {
+  // Uniform scale: `contain` keeps full frame visible; `cover` fills viewport (clips). Bar height reserved only when stacked (contain).
+  React.useLayoutEffect(() => {
     if (!stageRef.current) return;
     const el = stageRef.current;
     const measure = () => {
-      const barH = 44; // playback bar height
-      const s = Math.min(
-        el.clientWidth / width,
-        (el.clientHeight - barH) / height
-      );
+      const barH = fit === 'contain' ? 52 : 0;
+      const ww = Math.max(1, el.clientWidth);
+      const hh = Math.max(1, el.clientHeight - barH);
+      const sx = ww / width;
+      const sy = hh / height;
+      const s = fit === 'cover' ? Math.max(sx, sy) : Math.min(sx, sy);
       setScale(Math.max(0.05, s));
     };
     measure();
@@ -371,7 +376,7 @@ function Stage({
       ro.disconnect();
       window.removeEventListener('resize', measure);
     };
-  }, [width, height]);
+  }, [width, height, fit]);
 
   // Animation loop
   React.useEffect(() => {
@@ -426,6 +431,70 @@ function Stage({
     [displayTime, duration, playing]
   );
 
+  const playback = (
+    <PlaybackBar
+      time={displayTime}
+      actualTime={time}
+      duration={duration}
+      playing={playing}
+      onPlayPause={() => setPlaying(p => !p)}
+      onReset={() => { setTime(0); }}
+      onSeek={(t) => setTime(t)}
+      onHover={(t) => setHoverTime(t)}
+    />
+  );
+
+  if (fit === 'cover') {
+    return (
+      <div
+        ref={stageRef}
+        style={{
+          position: 'absolute', inset: 0,
+          overflow: 'hidden',
+          background,
+          fontFamily: 'Inter, system-ui, sans-serif',
+        }}
+      >
+        <div style={{
+          position: 'absolute', inset: 0,
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
+          overflow: 'hidden',
+        }}>
+          <div
+            ref={canvasRef}
+            style={{
+              width, height,
+              background,
+              position: 'relative',
+              transform: `scale(${scale})`,
+              transformOrigin: 'center',
+              flexShrink: 0,
+              overflow: 'hidden',
+            }}
+          >
+            <TimelineContext.Provider value={ctxValue}>
+              {children}
+            </TimelineContext.Provider>
+          </div>
+        </div>
+
+        <div style={{
+          position: 'absolute', left: 0, right: 0, bottom: 0,
+          display: 'flex', justifyContent: 'center',
+          paddingBottom: 8,
+          paddingLeft: 12,
+          paddingRight: 12,
+          pointerEvents: 'none',
+          zIndex: 20,
+        }}>
+          <div style={{ pointerEvents: 'auto', width: '100%', maxWidth: 680 }}>
+            {playback}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div
       ref={stageRef}
@@ -433,11 +502,11 @@ function Stage({
         position: 'absolute', inset: 0,
         display: 'flex', flexDirection: 'column',
         alignItems: 'center',
-        background: '#0a0a0a',
+        background,
+        overflow: 'hidden',
         fontFamily: 'Inter, system-ui, sans-serif',
       }}
     >
-      {/* Canvas area — vertically centered in remaining space */}
       <div style={{
         flex: 1,
         width: '100%',
@@ -464,17 +533,7 @@ function Stage({
         </div>
       </div>
 
-      {/* Playback bar — stacked below canvas, never overlapping */}
-      <PlaybackBar
-        time={displayTime}
-        actualTime={time}
-        duration={duration}
-        playing={playing}
-        onPlayPause={() => setPlaying(p => !p)}
-        onReset={() => { setTime(0); }}
-        onSeek={(t) => setTime(t)}
-        onHover={(t) => setHoverTime(t)}
-      />
+      {playback}
     </div>
   );
 }

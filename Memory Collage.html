@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>A Life in Frames — Memory Collage</title>
+<title>Memory Collage</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,13 @@
     height: 100%;
     overflow: hidden;
   }
-  #root { width: 100vw; height: 100vh; }
+  #root {
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    min-height: 100vh;
+    height: 100vh;
+  }
   /* hide image alt text flash */
   img { color: transparent; }
 </style>
@@ -25,6 +31,14 @@
 <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
 </head>
 <body>
+<script>
+(function () {
+  try {
+    localStorage.removeItem('memory-montage-v1:t');
+    localStorage.removeItem('animstage:t');
+  } catch (_) {}
+})();
+</script>
 <div id="root"></div>
 <script type="text/babel" src="animations.jsx"></script>
 <script type="text/babel" src="tweaks-panel.jsx"></script>
